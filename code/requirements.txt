@@ -1,0 +1,7 @@
+# Core
+anthropic>=0.39.0      # Claude API client (vision + text, tool-use structured output)
+Pillow>=10.0.0         # image loading, downscaling, format/EXIF handling
+python-dotenv>=1.0.0   # load ANTHROPIC_API_KEY from .env
+
+# Stdlib used elsewhere: csv, json, hashlib, base64, concurrent.futures, argparse, dataclasses
+# (no pandas/numpy required — kept dependency-light for reproducibility)

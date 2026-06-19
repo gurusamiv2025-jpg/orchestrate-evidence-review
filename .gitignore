@@ -1,0 +1,34 @@
+# secrets — never commit
+.env
+*.env
+!.env.example
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# runtime cache & usage
+.orch_cache/
+*_usage.json
+
+# generated evaluation artifacts (regenerate with evaluation/main.py)
+code/evaluation/results.json
+code/evaluation/metrics_table.md
+code/evaluation/sample_predictions_*.csv
+
+# predictions output (regenerate with main.py)
+output.csv
+
+# AI build transcript — not part of the codebase
+*log.txt
+hackerrank_orchestrate_log.txt
+
+# provided dataset (large + third-party images): fetch from the challenge repo
+dataset/
+
+# OS
+.DS_Store
+Thumbs.db
